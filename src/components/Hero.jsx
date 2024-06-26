@@ -49,7 +49,7 @@ const Hero = () => {
               <div className="aspect-[33/40] rounded-b-3xl rounded-t-3xl overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={hero4}
-                  className="w-full scale-[1.1] translate-y-[50%] md:translate-y-[8%] md:scale-[1] md:-translte-y-[10%] lg:-translate-y-[13%] rounded-2xl"
+                  className="w-full scale-[1.7] md:scale-[1.1] translate-y-[50%] md:translate-y-[8%] md:scale-[1] md:-translte-y-[10%] lg:-translate-y-[13%] rounded-2xl"
                   width={1024}
                   height={490}
                   alt="AI"
@@ -92,7 +92,7 @@ const Hero = () => {
       </div>
 
       <BottomLine />
-      <h5 className="tagline mb-6 text-center text-n-1/50">
+      <h5 className="tagline mt-8 mb-6 text-center text-n-1/50 relative z-10">
         Helping people create beautiful web content
       </h5>
     </Section>
