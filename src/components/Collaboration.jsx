@@ -55,7 +55,7 @@ const Collaboration = () => {
               {collabApps.map((app, index) => (
                 <li
                   key={app.id}
-                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45
+                  className={`absolute top-0  left-1/2 h-2/5 mt-9 sm:mt-0 sm:h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45
                     }`}
                 >
                   <div
