@@ -16,7 +16,7 @@ const FadeInSection = ({ children }) => {
 
     return (
         <div
-            className={`transition-opacity duration-[1500ms] ${isVisible ? 'opacity-100' : 'opacity-0'
+            className={`transition-opacity duration-[1200ms] ${isVisible ? 'opacity-100' : 'opacity-0'
                 }`}
             ref={domRef}
         >
