@@ -23,10 +23,10 @@ const ProjectCard = ({ image, title, description, link }) => (
 
 const Services = () => {
   const projects = [
-    { image: restaurantImg, title: "Restaurant Website", description: "Custom-built website with online menu and reservation system.", link: "https://trois-champs-elysees.netlify.app/" },
-    { image: nexaBankImg, title: "NexaBank Platform", description: "Secure and user-friendly online banking interface.", link: "https://luke-nexabank.netlify.app/" },
-    { image: futureWaveImg, title: "FutureWave Tech", description: "Innovative product showcase for a cutting-edge tech capital company.", link: "https://future-wave.netlify.app/" },
-    { image: creativeDesignImg, title: "Creative Design Portfolio", description: "Visually stunning portfolio for a graphic design agency.", link: "https://creative-design-luke.netlify.app/" },
+    { image: restaurantImg, title: "Fine Dining Website", description: "Custom-built website with online menu and reservation system.", link: "https://trois-champs-elysees.netlify.app/" },
+    { image: nexaBankImg, title: "NexaBank Platform", description: "Modern user-friendly online banking interface.", link: "https://luke-nexabank.netlify.app/" },
+    { image: futureWaveImg, title: "FutureWave Capital", description: "Innovative product showcase for a cutting-edge tech capital company.", link: "https://future-wave.netlify.app/" },
+    { image: creativeDesignImg, title: "Creative Design Agency", description: "Visually stunning portfolio for a graphic design agency.", link: "https://creative-design-luke.netlify.app/" },
     { image: airTourImg, title: "AirTour Booking System", description: "Comprehensive travel booking platform for air balloon tours.", link: "https://luke-airtour.netlify.app/" },
     { image: architectImg, title: "Architect Showcase", description: "Elegant portfolio website for a renowned architecture firm.", link: "https://luke-architect.netlify.app/" },
   ];

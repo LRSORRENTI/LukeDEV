@@ -19,7 +19,6 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -40,7 +39,6 @@ import service3 from "./services/service-3.png";
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
 
-import coins from "./roadmap/coins.png";
 import done from "./roadmap/done.svg";
 import hero from "./roadmap/hero.png";
 import roadmap1 from "./roadmap/image-1.png";
@@ -87,8 +85,14 @@ import creativeDesignImg from './creative-design.png'
 import airTourImg from './AirTour.png'
 import architectImg from './architect.png'
 
+import hoverImg1 from './benefits/image-1.png';
+import hoverImg2 from './benefits/image-2.png';
+import hoverImg3 from './benefits/image-3.png';
 
 export {
+  hoverImg1,
+  hoverImg2,
+  hoverImg3,
   restaurantImg,
   nexaBankImg,
   futureWaveImg,
