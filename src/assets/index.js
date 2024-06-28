@@ -89,7 +89,10 @@ import hoverImg1 from '../../public/benefits/image-1.png';
 import hoverImg2 from '../../public/benefits/image-2.png';
 import hoverImg3 from '../../public/benefits/image-3.png';
 
+import laptop from './laptop.png';
+
 export {
+  laptop,
   hoverImg1,
   hoverImg2,
   hoverImg3,
