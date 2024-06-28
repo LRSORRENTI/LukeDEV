@@ -44,10 +44,9 @@ import hero from "./roadmap/hero.png";
 import roadmap1 from "./roadmap/image-1.png";
 import undone from "./roadmap/undone.svg";
 
-import notification1 from "./notification/image-1.png";
-import notification2 from "./notification/image-2.png";
-import notification3 from "./notification/image-3.png";
-import notification4 from "./notification/image-4.png";
+import notification2 from "./notification/image-2.jpg";
+import notification3 from "./notification/image-3.jpg";
+import notification4 from "./notification/image-4.jpg";
 
 import benefitCard1 from "../../public/benefits/card-1.svg";
 import benefitCard2 from "../../public/benefits/card-2.svg";
@@ -148,7 +147,6 @@ export {
   hero,
   roadmap1,
   undone,
-  notification1,
   notification2,
   notification3,
   notification4,
