@@ -27,7 +27,8 @@ import {
   twitter,
   apiImage,
   gamingImage,
-  userImage
+  userImage,
+  laptop
 } from "../assets";
 
 export const navigation = [
