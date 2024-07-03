@@ -40,7 +40,7 @@ const Header = () => {
         <a className="block w-[12rem] xl:mr-8 text-2xl font-extrabold ml-2" href="#hero">
           {/* Luke 	<span>&lt;/&gt;</span> DEV */}
           {/* Luke 	<span>&lt;/&gt;</span> DEV */}
-          &nbsp;LukeDEV
+          &nbsp;LukeDEVS
         </a>
 
         <nav

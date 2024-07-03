@@ -25,7 +25,7 @@ const Hero = () => {
             {/* Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "} */}
             Bespoke web solutions to grow your business.&nbsp;
             <span className="inline-block relative">
-              Use LukeDEV{" "}
+              Use LukeDEVS{" "}
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -36,7 +36,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-lg max-2-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Enhance your online presence and elevate your business with LukeDEV, the custom web solutions platform
+            Enhance your online presence and elevate your business with LukeDEVS, the custom web solutions platform
           </p>
           <Button href="#price" white>
             Get started
