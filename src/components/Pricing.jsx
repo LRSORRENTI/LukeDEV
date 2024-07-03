@@ -31,7 +31,7 @@ const Pricing = () => {
         <div id="price" aria-description="pricing section"></div>
         <Heading
           tag="Custom web solutions platform"
-          title="Get started with LukeDEV"
+          title="Get started with LukeDEVS"
         />
 
         <div className="relative">
