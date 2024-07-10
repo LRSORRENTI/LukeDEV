@@ -83,6 +83,9 @@ import futureWaveImg from './future-wave.png'
 import creativeDesignImg from './creative-design.png'
 import airTourImg from './AirTour.png'
 import architectImg from './architect.png'
+import madisonImg from './madison-public-library.png'
+import photographerImg from './Photo.png'
+import boltiImg from './Bolti.png'
 
 import hoverImg1 from '../../public/benefits/image-1.png';
 import hoverImg2 from '../../public/benefits/image-2.png';
@@ -95,6 +98,9 @@ export {
   hoverImg1,
   hoverImg2,
   hoverImg3,
+  madisonImg,
+  boltiImg,
+  photographerImg,
   restaurantImg,
   nexaBankImg,
   futureWaveImg,
