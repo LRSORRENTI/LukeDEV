@@ -192,7 +192,7 @@ export const benefits = [
     title: "Tailored Solutions",
     text: "We start with a detailed consultation to ensure every solution is tailored to your specific business needs, guaranteeing a personalized service",
     backgroundUrl: "benefits/card-1.svg",
-    iconUrl: "benefits/icon-1.svg",
+    iconUrl: "benefits/icon-4.svg",
     imageUrl: "benefits/image-2.png",
   },
   {
@@ -209,7 +209,7 @@ export const benefits = [
     title: "Streamlined Communication",
     text: "Use our modern project management tools to check real-time progress and communicate effortlessly, making project coordination simple",
     backgroundUrl: "benefits/card-3.svg",
-    iconUrl: "benefits/icon-3.svg",
+    iconUrl: "benefits/icon-1.svg",
     imageUrl: "benefits/image-2.png",
   },
   {
@@ -217,7 +217,7 @@ export const benefits = [
     title: "Efficient Milestone Tracking",
     text: "We set clear milestones and meet them, ensuring your project is always on track and delivered on time",
     backgroundUrl: "benefits/card-4.svg",
-    iconUrl: "benefits/icon-4.svg",
+    iconUrl: "benefits/icon-2.svg",
     imageUrl: "benefits/image-2.png",
     light: true,
   },
@@ -226,7 +226,7 @@ export const benefits = [
     title: "Professional Growth",
     text: "We believe in continuous improvement and staying ahead with the latest web technologies to deliver cutting-edge solutions",
     backgroundUrl: "benefits/card-5.svg",
-    iconUrl: "benefits/icon-1.svg",
+    iconUrl: "benefits/icon-3.svg",
     imageUrl: "benefits/image-2.png",
   },
   {
@@ -234,7 +234,7 @@ export const benefits = [
     title: "Quality Assured",
     text: "Focus on delivering high-quality, robust web solutions that not only meet but exceed your expectations, ensuring total satisfaction",
     backgroundUrl: "benefits/card-6.svg",
-    iconUrl: "benefits/icon-2.svg",
+    iconUrl: "benefits/icon-4.svg",
     imageUrl: "benefits/image-2.png",
   },
 ];
