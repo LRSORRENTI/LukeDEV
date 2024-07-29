@@ -1,10 +1,19 @@
+import { useEffect } from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
 
 const PricingList = () => {
+  useEffect(() => {
+    // Use JavaScript to dynamically create mailto links for all relevant buttons
+    const mailtoLinks = document.querySelectorAll(".mailto");
+    mailtoLinks.forEach(link => {
+      link.href = 'mailto:luke-sorrenti@outlook.com?subject=Website%20Development%20Inquiry';
+    });
+  }, []);
+
   return (
-    <div className="flex gap-[1rem] max-lg:flex-wrap" >
+    <div className="flex gap-[1rem] max-lg:flex-wrap">
       {pricing.map((item) => (
         <div
           key={item.id}
@@ -29,8 +38,8 @@ const PricingList = () => {
           </div>
 
           <Button
-            className="w-full mb-6"
-            href={item.price ? "/pricing" : "mailto:luke-sorrenti@outlook.com"}
+            className="w-full mb-6 mailto"
+            href="#"
             white={!!item.price}
           >
             {item.price ? "Get started" : "Contact for pricing"}

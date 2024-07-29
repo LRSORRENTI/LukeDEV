@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
@@ -6,7 +7,6 @@ import { navigation } from "../constants/index";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
-import { useState } from "react";
 
 const Header = () => {
   const pathname = useLocation();
@@ -30,16 +30,16 @@ const Header = () => {
     setOpenNavigation(false);
   };
 
+  const mailtoLink = `mailto:luke-sorrenti@outlook.com?subject=Website%20Development%20Inquiry`;
+
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdropbackdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90"
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90"
         }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <img src={LukeDEVSymbol} alt="" className="" />
         <a className="block w-[12rem] xl:mr-8 text-2xl font-extrabold ml-2" href="#hero">
-          {/* Luke 	<span>&lt;/&gt;</span> DEV */}
-          {/* Luke 	<span>&lt;/&gt;</span> DEV */}
           &nbsp;LukeDEVS
         </a>
 
@@ -66,13 +66,7 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        {/* <a
-          href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block "
-        >
-          Contact
-        </a> */}
-        <Button className="hidden lg:flex" href="mailto:luke-sorrenti@outlook.com">
+        <Button className="hidden lg:flex" href={mailtoLink}>
           Contact
         </Button>
 
