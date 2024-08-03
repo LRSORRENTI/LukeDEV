@@ -2,7 +2,7 @@ import React from 'react';
 import Section from "./Section";
 import Heading from "./Heading";
 
-import { photographerImg, boltiImg, madisonImg, nexaBankImg, restaurantImg, airTourImg, futureWaveImg, creativeDesignImg, architectImg } from '../assets';
+import { photographerImg, boltiImg, madisonImg, nexaBankImg, restaurantImg, airTourImg, futureWaveImg, creativeDesignImg, architectImg, hotelImg, jobSearchImg, pupPastries } from '../assets';
 
 const ProjectCard = ({ image, title, description, link }) => (
   <a
@@ -32,6 +32,9 @@ const Services = () => {
     { image: photographerImg, title: "Photographer Website", description: "Visually striking photographer portfolio website", link: "https://luke-photographer.netlify.app/" },
     { image: boltiImg, title: "E-Scooter Rental Website", description: "Vibrant and dynamic website advertising E-Scooters", link: "https://luke-bolti.netlify.app/" },
     { image: madisonImg, title: "Public Library Website", description: "Aesthetically clean and simple website built for a public library", link: "https://madison-public-lbrary.netlify.app/" },
+    { image: pupPastries, title: "Bakery Website", description: "Elegant and modern bakery website", link: "https://pup-pastries-future.netlify.app/"},
+    { image: hotelImg, title: "Hotel Website", description: "Minimalist and modern hotel website", link: "https://hotel-manhattan.netlify.app/" },
+    { image: jobSearchImg, title: "Job Search Website", description: "Clean and colorful job search platform website", link: "https://lukejobsearch.netlify.app" },
   ];
 
   return (
