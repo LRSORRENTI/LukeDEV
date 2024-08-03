@@ -86,6 +86,9 @@ import architectImg from './architect.png'
 import madisonImg from './madison-public-library.png'
 import photographerImg from './Photo.png'
 import boltiImg from './Bolti.png'
+import hotelImg from './hotel_manhattan.png'
+import jobSearchImg from './JobSearch.png'
+import pupPastries from './puppastries.png'
 
 import hoverImg1 from '../../public/benefits/image-1.png';
 import hoverImg2 from '../../public/benefits/image-2.png';
@@ -98,6 +101,9 @@ export {
   hoverImg1,
   hoverImg2,
   hoverImg3,
+  pupPastries,
+  hotelImg,
+  jobSearchImg,
   madisonImg,
   boltiImg,
   photographerImg,
