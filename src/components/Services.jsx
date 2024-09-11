@@ -33,7 +33,7 @@ const Services = () => {
     { image: creativeDesignImg, title: "Creative Design Agency", description: "Visually stunning portfolio for a graphic design agency", link: "https://creative-design-luke.netlify.app/" },
     { image: airTourImg, title: "AirTour Booking System", description: "Comprehensive travel booking platform for air balloon tours", link: "https://luke-airtour.netlify.app/" },
     { image: architectImg, title: "Architect Showcase", description: "Elegant portfolio website for a renowned architecture firm", link: "https://luke-architect.netlify.app/" },
-    { image: photographerImg, title: "Photographer Website", description: "Visually striking photographer portfolio website", link: "https://luke-photographer.netlify.app/" },
+    { image: photographerImg, title: "Photographer Website", description: "Visually striking photographer portfolio website", link: "https://dante-photographer.netlify.app/" },
     { image: boltiImg, title: "E-Scooter Rental Website", description: "Vibrant and dynamic website advertising E-Scooters", link: "https://luke-bolti.netlify.app/" },
     { image: madisonImg, title: "Public Library Website", description: "Aesthetically clean and simple website built for a public library", link: "https://madison-public-lbrary.netlify.app/" },
     { image: pupPastries, title: "Bakery Website", description: "Elegant and modern bakery website", link: "https://pup-pastries-future.netlify.app/"},
