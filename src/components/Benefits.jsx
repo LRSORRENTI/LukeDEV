@@ -36,7 +36,7 @@ const Benefits = () => {
                     alt={item.title}
                   />
                   <p className="ml-auto font-code text-xs font-bold text-transparent uppercase tracking-wider">
-                    Exloper more
+                    Explore more
                   </p>
                   <Arrow />
                 </div>
