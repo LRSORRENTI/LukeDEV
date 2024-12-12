@@ -1,5 +1,5 @@
 import Section from "./Section";
-import { socials } from "../constants";
+// import { socials } from "../constants";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           © {new Date().getFullYear()}. All rights reserved LukeDEVS
         </p>
 
-        <ul className="flex gap-5 flex-wrap">
+        {/* <ul className="flex gap-5 flex-wrap">
           {socials.map((item) => (
             <a
               key={item.id}
@@ -20,7 +20,7 @@ const Footer = () => {
               <img src={item.iconUrl} width={16} height={16} alt={item.title} />
             </a>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </Section>
   );
