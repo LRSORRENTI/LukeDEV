@@ -2,7 +2,7 @@ import React from 'react';
 import Section from "./Section";
 import Heading from "./Heading";
 
-import { photographerImg, boltiImg, madisonImg, nexaBankImg, restaurantImg, airTourImg, futureWaveImg, creativeDesignImg, architectImg, hotelImg, jobSearchImg, pupPastries } from '../assets';
+import { photographerImg, boltiImg, madisonImg, nexaBankImg, restaurantImg, airTourImg, futureWaveImg, creativeDesignImg, architectImg, hotelImg, jobSearchImg, pupPastries, RustlingOaks, SEOWebsite, BadgerOil } from '../assets';
 
 const ProjectCard = ({ image, title, description, link }) => (
   <a
@@ -27,6 +27,9 @@ const ProjectCard = ({ image, title, description, link }) => (
 
 const Services = () => {
   const projects = [
+    { image: RustlingOaks, title: "Rustling Oaks", description: "Custom-built Golf website with Next.js and Framer Motion", link: "https://rustling-oaks-golf-course.vercel.app/" },
+    { image: SEOWebsite, title: "SEO Website", description: "Custom-built SEO website with Next.js and Framer Motion", link: "https://improve-seo-ai.vercel.app/" },
+    { image: BadgerOil, title: "Oil Equipment Website", description: "HTML, CSS, and JavaScript website built for an oil equipment  distribution and  repair company", link: "https://badger-oil.netlify.app/" },
     { image: restaurantImg, title: "Fine Dining Website", description: "Custom-built website with online menu and reservation system", link: "https://trois-champs-elysees.netlify.app/" },
     { image: nexaBankImg, title: "NexaBank Platform", description: "Modern user-friendly online banking interface", link: "https://luke-nexabank.netlify.app/" },
     { image: futureWaveImg, title: "FutureWave Capital", description: "Innovative product showcase for a cutting-edge tech capital company", link: "https://future-wave.netlify.app/" },
