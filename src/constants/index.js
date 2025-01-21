@@ -244,7 +244,7 @@ export const pricing = [
     id: "0",
     title: "Standard",
     description: "Optimized and mobile responsive website suitable for small businesses and personal portfolios",
-    price: "1500",
+    price: "500",
     features: [
       "Single-page static website",
       "Up to 5 content sections",
@@ -256,7 +256,7 @@ export const pricing = [
     id: "1",
     title: "Premium",
     description: "Advanced website capabilities including multimedia integration, perfect for growing businesses",
-    price: "3500",
+    price: "1500",
     features: [
       "Everything in standard tier plus",
       "Up to 5 web pages",
