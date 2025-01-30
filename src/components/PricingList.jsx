@@ -1,16 +1,27 @@
-import { useEffect } from "react";
+"use client";
+
+import { useState } from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
+import {
+  AlertDialog,
+  AlertDialogTrigger,
+  AlertDialogContent,
+  AlertDialogHeader,
+  AlertDialogFooter,
+  AlertDialogTitle,
+  AlertDialogDescription,
+  AlertDialogAction,
+  AlertDialogCancel,
+} from "./alert-dialog";
+
+const emailAddress = "luke-sorrenti@outlook.com";
+const subject = "Website Development Inquiry";
+const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
 
 const PricingList = () => {
-  useEffect(() => {
-    // Use JavaScript to dynamically create mailto links for all relevant buttons
-    const mailtoLinks = document.querySelectorAll(".mailto");
-    mailtoLinks.forEach(link => {
-      link.href = 'mailto:luke-sorrenti@outlook.com?subject=Website%20Development%20Inquiry';
-    });
-  }, []);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="flex gap-[1rem] max-lg:flex-wrap">
@@ -37,13 +48,43 @@ const PricingList = () => {
             )}
           </div>
 
-          <Button
-            className="w-full mb-6 mailto"
-            href="#"
-            white={!!item.price}
-          >
-            {item.price ? "Get started" : "Contact for pricing"}
-          </Button>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button
+                className="w-full mb-6"
+                white={!!item.price}
+                onClick={() => setOpen(true)}
+              >
+                {item.price ? "Get started" : "Contact for pricing"}
+              </Button>
+            </AlertDialogTrigger>
+
+            {open && (
+              <AlertDialogContent className="bg-slate-950">
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Email Inquiry</AlertDialogTitle>
+                  <AlertDialogDescription className="text-white">
+                  Clicking "Email" will open your email client and start a business inquiry email
+                  to <strong>{emailAddress}</strong>. Would you like to continue?
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter className="px-1 py-2 gap-2 pt-3">
+                  <AlertDialogCancel onClick={() => setOpen(false)} className="bg-red-300 border-[2px] hover:border-[2px] hover:border-red-300  hover:text-black/80 transition-all 3s">
+                    Cancel
+                  </AlertDialogCancel>
+                  <AlertDialogAction
+                    onClick={() => {
+                      window.location.href = mailtoLink;
+                      setOpen(false);
+                    }}
+                    className=" border-[2px] border-green-400 bg-white  px-6  text-black/90 hover:text-white hover:bg-green-400 transition-all 2s"
+                  >
+                    Email
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            )}
+          </AlertDialog>
 
           <ul>
             {item.features.map((feature, index) => (
