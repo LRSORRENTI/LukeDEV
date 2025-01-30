@@ -64,9 +64,8 @@ const PricingList = () => {
                 <AlertDialogHeader>
                   <AlertDialogTitle>Email Inquiry</AlertDialogTitle>
                   <AlertDialogDescription className="text-white">
-                    Clicking "Email" will open your email client and start an
-                    email to <strong>{emailAddress}</strong>. Would you like to
-                    continue?
+                  Clicking "Email" will open your email client and start a business inquiry email
+                  to <strong>{emailAddress}</strong>. Would you like to continue?
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter className="px-1 py-2 gap-2 pt-3">
@@ -78,7 +77,7 @@ const PricingList = () => {
                       window.location.href = mailtoLink;
                       setOpen(false);
                     }}
-                    className=" border-[2px] border-green-400 bg-white px-6  text-black/90 hover:text-white hover:bg-green-400 transition-all 2s"
+                    className=" border-[2px] border-green-400 bg-white  px-6  text-black/90 hover:text-white hover:bg-green-400 transition-all 2s"
                   >
                     Email
                   </AlertDialogAction>
