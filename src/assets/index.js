@@ -93,6 +93,7 @@ import RustlingOaks from './RustlingOaks.png'
 import SEOWebsite from './AI-SEO.png'
 import BadgerOil from './BadgerOil.png'
 import BrightAquarium from './BrightAquarium.png'
+import NightPulse from './NightPulse.png'
 
 import hoverImg1 from '../../public/benefits/image-1.png';
 import hoverImg2 from '../../public/benefits/image-2.png';
@@ -105,6 +106,7 @@ export {
   hoverImg1,
   hoverImg2,
   hoverImg3,
+  NightPulse,
   BrightAquarium,
   RustlingOaks,
   SEOWebsite,
