@@ -1,0 +1,19 @@
+# robots.txt for https://lukedevs.com/
+
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /generate-sitemap.js
+
+# Allow specific paths (remove these if you don't want them indexed)
+Allow: /how-it-works
+Allow: /pricing
+Allow: /roadmap
+Allow: /contact
+
+# Sitemap location
+Sitemap: https://lukedevs.com/sitemap.xml
