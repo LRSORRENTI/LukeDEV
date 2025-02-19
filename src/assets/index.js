@@ -6,10 +6,10 @@ import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
-import homeSmile from "./home-smile.svg";
-import file02 from "./file-02.svg";
-import searchMd from "./search-md.svg";
-import plusSquare from "./plus-square.svg";
+import homeSmile from "./hero//home-smile.svg";
+import file02 from "./hero/file-02.svg";
+import searchMd from "./hero/search-md.svg";
+import plusSquare from "./hero/plus-square.svg";
 
 import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
@@ -36,6 +36,11 @@ import stars from "./pricing/stars.svg";
 import done from "./roadmap/done.svg";
 import undone from "./roadmap/undone.svg";
 
+import notification2 from "./notification/image-2.jpg";
+import notification3 from "./notification/image-3.jpg";
+import notification4 from "./notification/image-4.jpg";
+
+
 import benefitCard1 from "../../public/benefits/card-1.svg";
 import benefitCard2 from "../../public/benefits/card-2.svg";
 import benefitCard3 from "../../public/benefits/card-3.svg";
@@ -55,7 +60,7 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 
-import hero4 from './hero4.png';
+import hero4 from './hero/hero4.png';
 
 
 import apiImage from './roadmap/api.png';
@@ -165,4 +170,7 @@ export {
   instagram,
   telegram,
   twitter,
+  notification2,
+  notification3,
+  notification4
 };
