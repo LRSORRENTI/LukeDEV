@@ -1,20 +1,18 @@
-import check from "./check.svg";
-import LukeDEVSymbol from "./LukeDEVSymbol.svg";
-import play from "./play.svg";
-import gradient from "./gradient.png";
-import smallSphere from "./4-small.png";
-import grid from "./grid.png";
-import check2 from "./check-02.svg";
+import check from "./multiuse/check.svg";
+import LukeDEVSymbol from "./multiuse/LukeDEVSymbol.svg";
+import gradient from "./multiuse/gradient.png";
+import smallSphere from "./pricing/4-small.png";
+import grid from "./multiuse/grid.png";
+import check2 from "./roadmap/check-02.svg";
 import loading1 from "./loading-01.svg";
 import homeSmile from "./hero//home-smile.svg";
 import file02 from "./hero/file-02.svg";
 import searchMd from "./hero/search-md.svg";
 import plusSquare from "./hero/plus-square.svg";
 
-import disc02 from "./disc-02.svg";
-import chromecast from "./chrome-cast.svg";
-import sliders04 from "./sliders-04.svg";
-import loading from "./loading.png";
+
+
+import loading from "./hero/loading.png";
 
 import curve from "./hero/curve.png";
 import heroBackground from "./hero/hero-background.jpg";
@@ -126,7 +124,6 @@ export {
   check2,
   loading1,
   LukeDEVSymbol,
-  play,
   gradient,
   smallSphere,
   grid,
@@ -134,9 +131,6 @@ export {
   file02,
   searchMd,
   plusSquare,
-  disc02,
-  chromecast,
-  sliders04,
   loading,
   curve,
   heroBackground,
