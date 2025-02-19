@@ -13,6 +13,7 @@ import plusSquare from "./hero/plus-square.svg";
 
 
 import loading from "./hero/loading.png";
+import loading1 from './dontremove/loading-01.svg';
 
 import curve from "./hero/curve.png";
 import heroBackground from "./hero/hero-background.jpg";
@@ -131,6 +132,7 @@ export {
   searchMd,
   plusSquare,
   loading,
+  loading1,
   curve,
   heroBackground,
   curve1,
