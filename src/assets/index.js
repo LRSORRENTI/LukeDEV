@@ -68,25 +68,44 @@ import voiceImage from './roadmap/voice.png';
 
 
 // project images 
+// import restaurantImg from './projectImgs/restaurant.png';
+// import nexaBankImg from './projectImgs/nexabank.png'
+// import futureWaveImg from './projectImgs/futurewave.png'
+// import creativeDesignImg from './projectImgs/creativedesign.png'
+// import airTourImg from './projectImgs/airtour.png'
+// import architectImg from './projectImgs/architect.png'
+// import madisonImg from './projectImgs/madisonpubliclibrary.png'
+// import photographerImg from './projectImgs/photographer.png'
+// import boltiImg from './projectImgs/bolti.png'
+// import hotelImg from './projectImgs/hotelmanhattan.png'
+// import jobSearchImg from './projectImgs/jobsearch.png'
+// import pupPastries from './projectImgs/puppastries.png'
+// import rustlingOaks from './projectImgs/rustlingoaks.png'
+// import seoWebsite from './projectImgs/ai-seo.png'
+// import badgerOil from './projectImgs/badgeroil.png'
+// import brightAquarium from './projectImgs/brightaquarium.png'
+// import nightPulse from './projectImgs/nightpulse.png'
+// import tracyPsych from './projectImgs/tracyjonespsych.png'
 
-import restaurantImg from './projectImgs/restaurant.png';
-import nexaBankImg from './projectImgs/nexabank.png'
-import futureWaveImg from './projectImgs/futurewave.png'
-import creativeDesignImg from './projectImgs/creativedesign.png'
-import airTourImg from './projectImgs/airtour.png'
-import architectImg from './projectImgs/architect.png'
-import madisonImg from './projectImgs/madisonpubliclibrary.png'
-import photographerImg from './projectImgs/photographer.png'
-import boltiImg from './projectImgs/bolti.png'
-import hotelImg from './projectImgs/hotelmanhattan.png'
-import jobSearchImg from './projectImgs/jobsearch.png'
-import pupPastries from './projectImgs/puppastries.png'
-import rustlingOaks from './projectImgs/rustlingoaks.png'
-import seoWebsite from './projectImgs/ai-seo.png'
-import badgerOil from './projectImgs/badgeroil.png'
-import brightAquarium from './projectImgs/brightaquarium.png'
-import nightPulse from './projectImgs/nightpulse.png'
-import tracyPsych from './projectImgs/tracyjonespsych.png'
+
+import restaurantImg from './webpProjectImgs/restaurant.webp';
+import nexaBankImg from './webpProjectImgs/nexabank.webp'
+import futureWaveImg from './webpProjectImgs/futurewave.webp'
+import creativeDesignImg from './webpProjectImgs/creativedesign.webp'
+import airTourImg from './webpProjectImgs/airtour.webp'
+import architectImg from './webpProjectImgs/architect.webp'
+import madisonImg from './webpProjectImgs/madisonpubliclibrary.webp'
+import photographerImg from './webpProjectImgs/photographer.webp'
+import boltiImg from './webpProjectImgs/bolti.webp'
+import hotelImg from './webpProjectImgs/hotelmanhattan.webp'
+import jobSearchImg from './webpProjectImgs/jobsearch.webp'
+import pupPastries from './webpProjectImgs/puppastries.webp'
+import rustlingOaks from './webpProjectImgs/rustlingoaks.webp'
+import seoWebsite from './webpProjectImgs/ai-seo.webp'
+import badgerOil from './webpProjectImgs/badgeroil.webp'
+import brightAquarium from './webpProjectImgs/brightaquarium.webp'
+import nightPulse from './webpProjectImgs/nightpulse.webp'
+import tracyPsych from './webpProjectImgs/tracyjonespsych.webp'
 
 import hoverImg1 from '../../public/benefits/image-1.png';
 import hoverImg2 from '../../public/benefits/image-2.png';
