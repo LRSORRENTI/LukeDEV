@@ -52,6 +52,7 @@ const Benefits = () => {
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
+                      alt="background image overlay"
                       width={380}
                       height={362}
                       className="w-full h-full object-cover"
