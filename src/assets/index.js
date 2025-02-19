@@ -77,23 +77,24 @@ import voiceImage from './voice.png';
 
 // project images 
 
-import restaurantImg from './restaurant.png';
-import nexaBankImg from './nexabank.png'
-import futureWaveImg from './future-wave.png'
-import creativeDesignImg from './creative-design.png'
-import airTourImg from './AirTour.png'
-import architectImg from './architect.png'
-import madisonImg from './madison-public-library.png'
-import photographerImg from './Photo.png'
-import boltiImg from './Bolti.png'
-import hotelImg from './hotel_manhattan.png'
-import jobSearchImg from './JobSearch.png'
-import pupPastries from './puppastries.png'
-import RustlingOaks from './RustlingOaks.png'
-import SEOWebsite from './AI-SEO.png'
-import BadgerOil from './BadgerOil.png'
-import BrightAquarium from './BrightAquarium.png'
-import NightPulse from './NightPulse.png'
+import restaurantImg from './projectImgs/restaurant.png';
+import nexaBankImg from './projectImgs/nexabank.png'
+import futureWaveImg from './projectImgs/futurewave.png'
+import creativeDesignImg from './projectImgs/creativedesign.png'
+import airTourImg from './projectImgs/airtour.png'
+import architectImg from './projectImgs/architect.png'
+import madisonImg from './projectImgs/madisonpubliclibrary.png'
+import photographerImg from './projectImgs/photographer.png'
+import boltiImg from './projectImgs/bolti.png'
+import hotelImg from './projectImgs/hotelmanhattan.png'
+import jobSearchImg from './projectImgs/jobsearch.png'
+import pupPastries from './projectImgs/puppastries.png'
+import rustlingOaks from './projectImgs/rustlingoaks.png'
+import seoWebsite from './projectImgs/ai-seo.png'
+import badgerOil from './projectImgs/badgeroil.png'
+import brightAquarium from './projectImgs/brightaquarium.png'
+import nightPulse from './projectImgs/nightpulse.png'
+import tracyPsych from './projectImgs/tracyjonespsych.png'
 
 import hoverImg1 from '../../public/benefits/image-1.png';
 import hoverImg2 from '../../public/benefits/image-2.png';
@@ -106,11 +107,12 @@ export {
   hoverImg1,
   hoverImg2,
   hoverImg3,
-  NightPulse,
-  BrightAquarium,
-  RustlingOaks,
-  SEOWebsite,
-  BadgerOil,
+  tracyPsych,
+  nightPulse,
+  brightAquarium,
+  rustlingOaks,
+  seoWebsite,
+  badgerOil,
   pupPastries,
   hotelImg,
   jobSearchImg,
