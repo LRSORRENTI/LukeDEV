@@ -26,7 +26,7 @@ const Notification = ({ className, title }) => {
               >
                 <img
                   src={item}
-                  className="w-full aspect-square"
+                  className="w-full object-cover aspect-square"
                   width={20}
                   height={20}
                   alt={item}
