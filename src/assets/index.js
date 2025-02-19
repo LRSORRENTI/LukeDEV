@@ -34,9 +34,9 @@ import stars from "./pricing/stars.svg";
 
 import done from "./roadmap/done.svg";
 
-import notification2 from "./notification/image-2.jpg";
-import notification3 from "./notification/image-3.jpg";
-import notification4 from "./notification/image-4.jpg";
+import notification2 from "./notification/headshot1.webp";
+import notification3 from "./notification/headshot2.webp";
+import notification4 from "./notification/headshot3.webp";
 
 
 import benefitCard1 from "../../public/benefits/card-1.svg";
