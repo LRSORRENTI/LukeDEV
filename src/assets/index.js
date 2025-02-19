@@ -6,17 +6,15 @@ import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
-import homeSmile from "./home-smile.svg";
-import file02 from "./file-02.svg";
-import searchMd from "./search-md.svg";
-import plusSquare from "./plus-square.svg";
-import recording03 from "./recording-03.svg";
-import recording01 from "./recording-01.svg";
+import homeSmile from "./hero//home-smile.svg";
+import file02 from "./hero/file-02.svg";
+import searchMd from "./hero/search-md.svg";
+import plusSquare from "./hero/plus-square.svg";
+
 import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
-import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
 import heroBackground from "./hero/hero-background.jpg";
@@ -32,21 +30,16 @@ import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
-import service1 from "./services/service-1.png";
-import service2 from "./services/service-2.png";
-import service3 from "./services/service-3.png";
-
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
 
 import done from "./roadmap/done.svg";
-import hero from "./roadmap/hero.png";
-import roadmap1 from "./roadmap/image-1.png";
 import undone from "./roadmap/undone.svg";
 
 import notification2 from "./notification/image-2.jpg";
 import notification3 from "./notification/image-3.jpg";
 import notification4 from "./notification/image-4.jpg";
+
 
 import benefitCard1 from "../../public/benefits/card-1.svg";
 import benefitCard2 from "../../public/benefits/card-2.svg";
@@ -66,51 +59,52 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
-import lukelogo from './luke-logo.png';
-import hero4 from './hero4.png';
+
+import hero4 from './hero/hero4.png';
 
 
-import apiImage from './api.png';
-import gamingImage from './gaming.png';
-import userImage from './user.png';
-import voiceImage from './voice.png';
+import apiImage from './roadmap/api.png';
+import gamingImage from './roadmap/gaming.png';
+import userImage from './roadmap/user.png';
+import voiceImage from './roadmap/voice.png';
+
 
 // project images 
 
-import restaurantImg from './restaurant.png';
-import nexaBankImg from './nexabank.png'
-import futureWaveImg from './future-wave.png'
-import creativeDesignImg from './creative-design.png'
-import airTourImg from './AirTour.png'
-import architectImg from './architect.png'
-import madisonImg from './madison-public-library.png'
-import photographerImg from './Photo.png'
-import boltiImg from './Bolti.png'
-import hotelImg from './hotel_manhattan.png'
-import jobSearchImg from './JobSearch.png'
-import pupPastries from './puppastries.png'
-import RustlingOaks from './RustlingOaks.png'
-import SEOWebsite from './AI-SEO.png'
-import BadgerOil from './BadgerOil.png'
-import BrightAquarium from './BrightAquarium.png'
-import NightPulse from './NightPulse.png'
+import restaurantImg from './projectImgs/restaurant.png';
+import nexaBankImg from './projectImgs/nexabank.png'
+import futureWaveImg from './projectImgs/futurewave.png'
+import creativeDesignImg from './projectImgs/creativedesign.png'
+import airTourImg from './projectImgs/airtour.png'
+import architectImg from './projectImgs/architect.png'
+import madisonImg from './projectImgs/madisonpubliclibrary.png'
+import photographerImg from './projectImgs/photographer.png'
+import boltiImg from './projectImgs/bolti.png'
+import hotelImg from './projectImgs/hotelmanhattan.png'
+import jobSearchImg from './projectImgs/jobsearch.png'
+import pupPastries from './projectImgs/puppastries.png'
+import rustlingOaks from './projectImgs/rustlingoaks.png'
+import seoWebsite from './projectImgs/ai-seo.png'
+import badgerOil from './projectImgs/badgeroil.png'
+import brightAquarium from './projectImgs/brightaquarium.png'
+import nightPulse from './projectImgs/nightpulse.png'
+import tracyPsych from './projectImgs/tracyjonespsych.png'
 
 import hoverImg1 from '../../public/benefits/image-1.png';
 import hoverImg2 from '../../public/benefits/image-2.png';
 import hoverImg3 from '../../public/benefits/image-3.png';
 
-import laptop from './laptop.png';
 
 export {
-  laptop,
   hoverImg1,
   hoverImg2,
   hoverImg3,
-  NightPulse,
-  BrightAquarium,
-  RustlingOaks,
-  SEOWebsite,
-  BadgerOil,
+  tracyPsych,
+  nightPulse,
+  brightAquarium,
+  rustlingOaks,
+  seoWebsite,
+  badgerOil,
   pupPastries,
   hotelImg,
   jobSearchImg,
@@ -128,7 +122,6 @@ export {
   userImage,
   voiceImage,
   hero4,
-  lukelogo,
   check,
   check2,
   loading1,
@@ -141,13 +134,10 @@ export {
   file02,
   searchMd,
   plusSquare,
-  recording03,
-  recording01,
   disc02,
   chromecast,
   sliders04,
   loading,
-  background,
   curve,
   heroBackground,
   curve1,
@@ -160,18 +150,10 @@ export {
   protopie,
   raindrop,
   slack,
-  service1,
-  service2,
-  service3,
   lines,
   stars,
   done,
-  hero,
-  roadmap1,
   undone,
-  notification2,
-  notification3,
-  notification4,
   benefitCard1,
   benefitCard2,
   benefitCard3,
@@ -188,4 +170,7 @@ export {
   instagram,
   telegram,
   twitter,
+  notification2,
+  notification3,
+  notification4
 };

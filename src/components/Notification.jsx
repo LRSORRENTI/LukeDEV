@@ -1,5 +1,5 @@
-import { laptop } from "../assets";
 import { notificationImages } from "../constants";
+import laptop from '../assets/notification/laptop.png'
 
 const Notification = ({ className, title }) => {
   return (

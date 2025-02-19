@@ -1,4 +1,7 @@
 import {
+  notification2,
+  notification3,
+  notification4,
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
@@ -12,15 +15,11 @@ import {
   framer,
   homeSmile,
   instagram,
-  notification2,
-  notification3,
-  notification4,
   notion,
   photoshop,
   plusSquare,
   protopie,
   raindrop,
-  roadmap1,
   searchMd,
   slack,
   telegram,
@@ -28,7 +27,7 @@ import {
   apiImage,
   gamingImage,
   userImage,
-  laptop
+  voiceImage
 } from "../assets";
 
 export const navigation = [
@@ -71,7 +70,7 @@ export const roadmap = [
     text: "Implementing AI powered voice integration for enterprise applications",
     date: "June 2024",
     status: "progress",
-    imageUrl: roadmap1,
+    imageUrl: voiceImage,
     colorful: true,
   },
   {
