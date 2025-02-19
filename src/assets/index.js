@@ -4,7 +4,7 @@ import gradient from "./multiuse/gradient.png";
 import smallSphere from "./pricing/4-small.png";
 import grid from "./multiuse/grid.png";
 import check2 from "./roadmap/check-02.svg";
-import loading1 from "./loading-01.svg";
+
 import homeSmile from "./hero//home-smile.svg";
 import file02 from "./hero/file-02.svg";
 import searchMd from "./hero/search-md.svg";
@@ -122,7 +122,6 @@ export {
   hero4,
   check,
   check2,
-  loading1,
   LukeDEVSymbol,
   gradient,
   smallSphere,
