@@ -1,5 +1,5 @@
 import { notificationImages } from "../constants";
-import laptop from '../assets/notification/laptop.png'
+import laptop from '../assets/notification/laptop.webp'
 
 const Notification = ({ className, title }) => {
   return (
