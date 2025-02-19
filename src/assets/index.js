@@ -33,7 +33,6 @@ import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
 
 import done from "./roadmap/done.svg";
-import undone from "./roadmap/undone.svg";
 
 import notification2 from "./notification/image-2.jpg";
 import notification3 from "./notification/image-3.jpg";
@@ -63,7 +62,7 @@ import hero4 from './hero/hero4.png';
 
 
 import apiImage from './roadmap/api.png';
-import gamingImage from './roadmap/gaming.png';
+import gamingImage from './roadmap/game.png';
 import userImage from './roadmap/user.png';
 import voiceImage from './roadmap/voice.png';
 
@@ -148,7 +147,6 @@ export {
   lines,
   stars,
   done,
-  undone,
   benefitCard1,
   benefitCard2,
   benefitCard3,
