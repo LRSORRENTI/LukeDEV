@@ -51,7 +51,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <img src={LukeDEVSymbol} alt="" />
+        <img src={LukeDEVSymbol} alt="LukeDEVS Logo" />
         <a
           className="block w-[12rem] xl:mr-8 text-2xl font-extrabold ml-2"
           href="#hero"
@@ -112,7 +112,7 @@ const Header = () => {
                   key={item.id}
                   href={item.url}
                   onClick={handleClick}
-                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-24 py-5 mb-2 md:mb-0 md:py-8 md:px-96 lg:-mr-2.5 lg:text-sm lg:font-semibold text-center ${
+                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-5 mb-2 md:mb-0 md:py-8 md:px-8 lg:-mr-2.5 lg:text-sm lg:font-semibold text-center ${
                     item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50"
                   } lg:leading-5 lg:hover:text-white xl:px-12`}
                 >
