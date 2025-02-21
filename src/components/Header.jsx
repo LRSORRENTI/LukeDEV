@@ -64,14 +64,14 @@ const Header = () => {
             openNavigation ? "flex" : "hidden"
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center lg:mr-32 lg:flex-row">
+          <div className="relative z-2 flex flex-col items-center justify-start sm:justify-center mx-auto lg:mr-32 lg:flex-row">
             {navigation.map((item) =>
               item.onlyMobile ? (
                 <AlertDialog key={item.id} open={openDialog} onOpenChange={setOpenDialog}>
                   <AlertDialogTrigger asChild>
                     <button
                       onClick={() => setOpenDialog(true)}
-                      className="block font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-24 py-5 mb-2 md:mb-0 md:py-8 md:px-96 lg:hidden text-center"
+                      className="block font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1  px-24 py-5 mb-2 md:mb-0 md:py-8 md:px-96 lg:hidden text-center"
                     >
                       {item.title}
                     </button>
@@ -112,7 +112,7 @@ const Header = () => {
                   key={item.id}
                   href={item.url}
                   onClick={handleClick}
-                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-5 mb-2 md:mb-0 md:py-8 md:px-8 lg:-mr-2.5 lg:text-sm lg:font-semibold text-center ${
+                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-5 mb-2 md:mb-0 md:py-8 md:px-8 lg:-mr-2.5 lg:text-sm lg:font-semibold text-center  ${
                     item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50"
                   } lg:leading-5 lg:hover:text-white xl:px-12`}
                 >
