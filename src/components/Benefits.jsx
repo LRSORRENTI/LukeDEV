@@ -34,6 +34,7 @@ const Benefits = () => {
                     width={48}
                     height={48}
                     alt={item.title}
+                    loading="lazy"
                   />
                   <p className="ml-auto font-code text-xs font-bold text-transparent uppercase tracking-wider">
                     Explore more
@@ -55,6 +56,7 @@ const Benefits = () => {
                       alt="background image overlay"
                       width={380}
                       height={362}
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   )}

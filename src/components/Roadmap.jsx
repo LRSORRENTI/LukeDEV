@@ -28,6 +28,7 @@ const Roadmap = () => (
                     width={550}
                     height={550}
                     alt="Grid"
+                    loading="lazy"
                   />
                 </div>
                 <div className="relative z-1">
@@ -41,6 +42,7 @@ const Roadmap = () => (
                         width={16}
                         height={16}
                         alt={status}
+                        loading="lazy"
                       />
                       <div className="tagline">{status}</div>
                     </div>
@@ -53,6 +55,7 @@ const Roadmap = () => (
                       width={628}
                       height={426}
                       alt={item.title}
+                      loading="lazy"
                     />
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>

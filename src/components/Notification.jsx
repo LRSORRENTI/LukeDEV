@@ -12,7 +12,8 @@ const Notification = ({ className, title }) => {
         src={laptop}
         width={62}
         height={62}
-        alt="image"
+        alt="laptop image"
+        loading="lazy"
         className="rounded-xl border border-violet-300"
       />
       <div className="flex-1">
@@ -31,6 +32,7 @@ const Notification = ({ className, title }) => {
                   width={20}
                   height={20}
                   alt={item}
+                  loading="lazy"
                 />
               </li>
             ))}
