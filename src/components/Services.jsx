@@ -49,7 +49,7 @@ const Services = () => {
 
   return (
     <Section id="client-projects">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" aria-description='Section displaying successful client projects, each project card has a corresponding image, ie bakery website shows an image of the hero section of that project'>
         <Heading className="text-center"
           title="Client Success Stories"
           text="Explore our portfolio of standout projects, demonstrating the powerful solutions we've crafted alongside our satisfied clients."

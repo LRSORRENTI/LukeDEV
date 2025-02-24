@@ -8,7 +8,7 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 const Collaboration = () => {
   return (
     <Section crosses id="howItWorks">
-      <div className="container lg:flex mx-auto" >
+      <div className="container lg:flex mx-auto" aria-description="Section explaining how the workflow phases are constructed from first meeting with the client until the finished build and maintenance phase ">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8 sm:ml-12">
             How it works

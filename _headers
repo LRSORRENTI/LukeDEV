@@ -1,0 +1,10 @@
+# Cache static assets for 1 year
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/benefits/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache Google Fonts for a longer duration
+https://fonts.googleapis.com/*
+  Cache-Control: public, max-age=604800, immutable
