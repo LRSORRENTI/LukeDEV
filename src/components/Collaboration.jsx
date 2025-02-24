@@ -18,7 +18,7 @@ const Collaboration = () => {
             {collabContent.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
                 <div className="flex items-center">
-                  <img src={check} width={24} height={24} alt="check" />
+                  <img src={check} width={24} height={24} alt="check" loading="lazy"/>
                   <h6 className="body-2 ml-5">{item.title}</h6>
                 </div>
                 {item.text && (
@@ -47,6 +47,7 @@ const Collaboration = () => {
                     width={48}
                     height={48}
                     alt="LukeDEV symbol"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -68,6 +69,7 @@ const Collaboration = () => {
                       height={app.height}
                       alt={app.title}
                       src={app.icon}
+                      loading="lazy"
                     />
                   </div>
                 </li>

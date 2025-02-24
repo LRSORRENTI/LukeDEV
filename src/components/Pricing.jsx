@@ -17,6 +17,7 @@ const Pricing = () => {
             width={255}
             height={255}
             alt="Sphere"
+            loading="lazy"
           />
           <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
             <img
@@ -25,6 +26,7 @@ const Pricing = () => {
               width={950}
               height={400}
               alt="Stars"
+              loading="lazy"
             />
           </div>
         </div>
