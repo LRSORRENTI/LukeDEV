@@ -3,6 +3,7 @@ import Tagline from "./Tagline";
 const Heading = ({ className, title, text, tag }) => {
   return (
     <div
+    aria-description="Heading for section "
       className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center`}
     >
       {tag && <Tagline className="mb-4 md:justify-center">{tag}</Tagline>}

@@ -10,7 +10,7 @@ import ClipPath from "../assets/svg/ClipPath";
 const Benefits = () => {
   return (
     <Section id="features">
-      <div className="container relative z-2">
+      <div className="container relative z-2" aria-description="Features section with six cards describing solutions and services">
         <Heading
           className="md:max-w-md lg:max-w-3xl text-center"
           title="Enhancing your web presence with expert solutions"

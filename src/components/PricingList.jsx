@@ -24,7 +24,8 @@ const PricingList = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex gap-[1rem] max-lg:flex-wrap">
+    <div className="flex gap-[1rem] max-lg:flex-wrap"
+    aria-description="Actual pricing cards showing the price of each option, standard price, premium, and enterprise respectively.">
       {pricing.map((item) => (
         <div
           key={item.id}
