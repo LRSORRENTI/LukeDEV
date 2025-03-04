@@ -78,7 +78,7 @@ const Header = () => {
                     </button>
                   </AlertDialogTrigger>
 
-                  <AlertDialogContent className="bg-slate-950 px-6 py-4 rounded-lg">
+                  <AlertDialogContent className=" px-6 py-4 rounded-lg">
                     <AlertDialogHeader>
                       <AlertDialogTitle className="text-white">
                         Email Inquiry
@@ -136,20 +136,21 @@ const Header = () => {
             </Button>
           </AlertDialogTrigger>
 
-          <AlertDialogContent className="bg-slate-950 px-6 py-4 rounded-lg">
+          <AlertDialogContent className=" px-6 py-4  bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-5 border border-gray-100
+">
             <AlertDialogHeader>
               <AlertDialogTitle className="text-white">
                 Email Inquiry
               </AlertDialogTitle>
-              <AlertDialogDescription className="text-white">
-                Clicking "Email" will open your email client and start a business inquiry email
-                to <strong>{emailAddress}</strong>. Would you like to continue?
+              <AlertDialogDescription className="text-white font-bold">
+                Pressing "Email" will open your email client and start a business inquiry email
+                to <strong>{emailAddress}</strong> <br aria-label="line break"/> <br/> Would you like to continue? <br aria-label="line break"/> <br/>
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter className="px-1 py-2 gap-2 pt-3">
               <AlertDialogCancel
                 onClick={() => setOpenDialog(false)}
-                className="bg-red-300 border-2 border-transparent hover:border-red-300 hover:text-black/80 px-4 py-2 rounded-md transition-all duration-200"
+                className="bg-slate-800 border-2 border-transparent  hover:bg-slate-700 hover:text-white/90 px-4 py-2 rounded-md transition-colors duration-200"
               >
                 Cancel
               </AlertDialogCancel>
@@ -158,7 +159,7 @@ const Header = () => {
                   window.location.href = mailtoLink;
                   setOpenDialog(false);
                 }}
-                className="border-2 border-green-400 bg-white px-6 py-2 rounded-md text-black/90 hover:text-white hover:bg-green-400 transition-all duration-200"
+                className=" px-6 py-2 rounded-md bg-violet-700 hover:bg-violet-600 transition-colors text-white"
               >
                 Email
               </AlertDialogAction>
