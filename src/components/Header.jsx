@@ -78,7 +78,7 @@ const Header = () => {
                     </button>
                   </AlertDialogTrigger>
 
-                  <AlertDialogContent className="bg-slate-950 px-6 py-4 rounded-lg">
+                  <AlertDialogContent className=" px-6 py-4 rounded-lg">
                     <AlertDialogHeader>
                       <AlertDialogTitle className="text-white">
                         Email Inquiry
@@ -136,14 +136,15 @@ const Header = () => {
             </Button>
           </AlertDialogTrigger>
 
-          <AlertDialogContent className="bg-slate-950 px-6 py-4 rounded-lg">
+          <AlertDialogContent className=" px-6 py-4  bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-5 border border-gray-100
+">
             <AlertDialogHeader>
               <AlertDialogTitle className="text-white">
                 Email Inquiry
               </AlertDialogTitle>
-              <AlertDialogDescription className="text-white">
-                Clicking "Email" will open your email client and start a business inquiry email
-                to <strong>{emailAddress}</strong>. Would you like to continue?
+              <AlertDialogDescription className="text-white font-bold">
+                Pressing "Email" will open your email client and start a business inquiry email
+                to <strong>{emailAddress}</strong> <br aria-label="line break"/> <br/> Would you like to continue? <br aria-label="line break"/> <br/>
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter className="px-1 py-2 gap-2 pt-3">
