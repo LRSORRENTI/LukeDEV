@@ -1,8 +1,8 @@
 import check from "./multiuse/check.svg";
 import LukeDEVSymbol from "./multiuse/LukeDEVSymbol.svg";
-import gradient from "./multiuse/gradient.png";
-import smallSphere from "./pricing/4-small.png";
-import grid from "./multiuse/grid.png";
+import gradient from "./multiuse/gradient.webp";
+import smallSphere from "./pricing/4-small.webp";
+import grid from "./multiuse/grid.webp";
 import check2 from "./roadmap/check-02.svg";
 
 import homeSmile from "./hero//home-smile.svg";
@@ -20,14 +20,14 @@ import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
-import discord from "./collaboration/discord.png";
-import figma from "./collaboration/figma.png";
-import framer from "./collaboration/framer.png";
-import notion from "./collaboration/notion.png";
-import photoshop from "./collaboration/photoshop.png";
-import protopie from "./collaboration/protopie.png";
-import raindrop from "./collaboration/raindrop.png";
-import slack from "./collaboration/slack.png";
+import discord from "./collaboration/discord.webp";
+import figma from "./collaboration/figma.webp";
+import framer from "./collaboration/framer.webp";
+import notion from "./collaboration/notion.webp";
+import photoshop from "./collaboration/photoshop.webp";
+import protopie from "./collaboration/protopie.webp";
+import raindrop from "./collaboration/raindrop.webp";
+import slack from "./collaboration/slack.webp";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -61,10 +61,10 @@ import twitter from "./socials/twitter.svg";
 import hero4 from './hero/hero4.webp';
 
 
-import apiImage from './roadmap/api.png';
-import gamingImage from './roadmap/game.png';
-import userImage from './roadmap/user.png';
-import voiceImage from './roadmap/voice.png';
+import apiImage from './roadmap/api.webp';
+import gamingImage from './roadmap/game.webp';
+import userImage from './roadmap/user.webp';
+import voiceImage from './roadmap/voice.webp';
 
 
 // project images 
