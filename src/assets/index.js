@@ -16,7 +16,7 @@ import loading from "./hero/loading.webp";
 import loading1 from './dontremove/loading-01.svg';
 
 import curve from "./hero/curve.webp";
-import heroBackground from "./hero/hero-background.jpg";
+import heroBackground from "./hero/hero-background.webp";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
