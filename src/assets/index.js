@@ -12,10 +12,10 @@ import plusSquare from "./hero/plus-square.svg";
 
 
 
-import loading from "./hero/loading.png";
+import loading from "./hero/loading.webp";
 import loading1 from './dontremove/loading-01.svg';
 
-import curve from "./hero/curve.png";
+import curve from "./hero/curve.webp";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -58,7 +58,7 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 
-import hero4 from './hero/hero4.png';
+import hero4 from './hero/hero4.webp';
 
 
 import apiImage from './roadmap/api.png';
