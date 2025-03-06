@@ -49,13 +49,12 @@ import benefitIcon1 from "../../public/benefits/icon-1.svg";
 import benefitIcon2 from "../../public/benefits/icon-2.svg";
 import benefitIcon3 from "../../public/benefits/icon-3.svg";
 import benefitIcon4 from "../../public/benefits/icon-4.svg";
-import benefitImage2 from "../../public/benefits/image-2.png";
+import benefitImage2 from "../../public/benefits/hover.webp";
 
-import discordBlack from "./socials/discord.svg";
-import facebook from "./socials/facebook.svg";
-import instagram from "./socials/instagram.svg";
-import telegram from "./socials/telegram.svg";
-import twitter from "./socials/twitter.svg";
+
+import instagram from "./socials/linkedin.svg";
+import telegram from "./socials/github.svg";
+import xtwitter from "./socials/x-twitter.svg";
 
 
 import hero4 from './hero/hero4.webp';
@@ -66,28 +65,7 @@ import gamingImage from './roadmap/game.webp';
 import userImage from './roadmap/user.webp';
 import voiceImage from './roadmap/voice.webp';
 
-
-// project images 
-// import restaurantImg from './projectImgs/restaurant.png';
-// import nexaBankImg from './projectImgs/nexabank.png'
-// import futureWaveImg from './projectImgs/futurewave.png'
-// import creativeDesignImg from './projectImgs/creativedesign.png'
-// import airTourImg from './projectImgs/airtour.png'
-// import architectImg from './projectImgs/architect.png'
-// import madisonImg from './projectImgs/madisonpubliclibrary.png'
-// import photographerImg from './projectImgs/photographer.png'
-// import boltiImg from './projectImgs/bolti.png'
-// import hotelImg from './projectImgs/hotelmanhattan.png'
-// import jobSearchImg from './projectImgs/jobsearch.png'
-// import pupPastries from './projectImgs/puppastries.png'
-// import rustlingOaks from './projectImgs/rustlingoaks.png'
-// import seoWebsite from './projectImgs/ai-seo.png'
-// import badgerOil from './projectImgs/badgeroil.png'
-// import brightAquarium from './projectImgs/brightaquarium.png'
-// import nightPulse from './projectImgs/nightpulse.png'
-// import tracyPsych from './projectImgs/tracyjonespsych.png'
-
-
+// Project Images
 import restaurantImg from './webpProjectImgs/restaurant.webp';
 import nexaBankImg from './webpProjectImgs/nexabank.webp'
 import futureWaveImg from './webpProjectImgs/futurewave.webp'
@@ -107,15 +85,10 @@ import brightAquarium from './webpProjectImgs/brightaquarium.webp'
 import nightPulse from './webpProjectImgs/nightpulse.webp'
 import tracyPsych from './webpProjectImgs/tracyjonespsych.webp'
 
-import hoverImg1 from '../../public/benefits/image-1.png';
-import hoverImg2 from '../../public/benefits/image-2.png';
-import hoverImg3 from '../../public/benefits/image-3.png';
+
 
 
 export {
-  hoverImg1,
-  hoverImg2,
-  hoverImg3,
   tracyPsych,
   nightPulse,
   brightAquarium,
@@ -177,11 +150,7 @@ export {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
-  discordBlack,
-  facebook,
-  instagram,
-  telegram,
-  twitter,
+  xtwitter,
   notification2,
   notification3,
   notification4
