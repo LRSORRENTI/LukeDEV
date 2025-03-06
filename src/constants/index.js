@@ -8,13 +8,10 @@ import {
   benefitIcon4,
   benefitImage2,
   discord,
-  discordBlack,
-  facebook,
   figma,
   file02,
   framer,
   homeSmile,
-  instagram,
   notion,
   photoshop,
   plusSquare,
@@ -22,8 +19,7 @@ import {
   raindrop,
   searchMd,
   slack,
-  telegram,
-  twitter,
+  xtwitter,
   apiImage,
   gamingImage,
   userImage,
@@ -192,7 +188,7 @@ export const benefits = [
     text: "We start with a detailed consultation to ensure every solution is tailored to your specific business needs, guaranteeing a personalized service",
     backgroundUrl: "benefits/card-1.svg",
     iconUrl: "benefits/icon-4.svg",
-    imageUrl: "benefits/image-2.png",
+    imageUrl: "benefits/hover.webp",
   },
   {
     id: "1",
@@ -200,7 +196,7 @@ export const benefits = [
     text: "From clear proposals to regular updates, we keep you informed every step of the way, ensuring a seamless and transparent project journey",
     backgroundUrl: "benefits/card-2.svg",
     iconUrl: "benefits/icon-2.svg",
-    imageUrl: "benefits/image-2.png",
+    imageUrl: "benefits/hover.webp",
     light: true,
   },
   {
@@ -209,7 +205,7 @@ export const benefits = [
     text: "Use our modern project management tools to check real-time progress and communicate effortlessly, making project coordination simple",
     backgroundUrl: "benefits/card-3.svg",
     iconUrl: "benefits/icon-1.svg",
-    imageUrl: "benefits/image-2.png",
+    imageUrl: "benefits/hover.webp",
   },
   {
     id: "3",
@@ -217,7 +213,7 @@ export const benefits = [
     text: "We set clear milestones and meet them, ensuring your project is always on track and delivered on time",
     backgroundUrl: "benefits/card-4.svg",
     iconUrl: "benefits/icon-2.svg",
-    imageUrl: "benefits/image-2.png",
+    imageUrl: "benefits/hover.webp",
     light: true,
   },
   {
@@ -226,7 +222,7 @@ export const benefits = [
     text: "We believe in continuous improvement and staying ahead with the latest web technologies to deliver cutting-edge solutions",
     backgroundUrl: "benefits/card-5.svg",
     iconUrl: "benefits/icon-3.svg",
-    imageUrl: "benefits/image-2.png",
+    imageUrl: "benefits/hover.webp",
   },
   {
     id: "5",
@@ -234,7 +230,7 @@ export const benefits = [
     text: "Focus on delivering high-quality, robust web solutions that not only meet but exceed your expectations, ensuring total satisfaction",
     backgroundUrl: "benefits/card-6.svg",
     iconUrl: "benefits/icon-4.svg",
-    imageUrl: "benefits/image-2.png",
+    imageUrl: "benefits/hover.webp",
   },
 ];
 
@@ -284,30 +280,24 @@ export const pricing = [
 // export const socials = [
 //   {
 //     id: "0",
-//     title: "Discord",
-//     iconUrl: discordBlack,
+//     title: "Twitter",
+//     iconUrl: xtwitter,
 //     url: "#",
 //   },
 //   {
 //     id: "1",
-//     title: "Twitter",
-//     iconUrl: twitter,
-//     url: "#",
-//   },
-//   {
-//     id: "2",
 //     title: "Instagram",
 //     iconUrl: instagram,
 //     url: "#",
 //   },
 //   {
-//     id: "3",
+//     id: "2",
 //     title: "Telegram",
 //     iconUrl: telegram,
 //     url: "#",
 //   },
 //   {
-//     id: "4",
+//     id: "3",
 //     title: "Facebook",
 //     iconUrl: facebook,
 //     url: "#",
