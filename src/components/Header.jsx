@@ -85,7 +85,7 @@ const Header = () => {
                       </AlertDialogTitle>
                       <AlertDialogDescription className="text-white">
                         Clicking "Email" will open your email client and start
-                        an email to <strong>{emailAddress}</strong>. Would you
+                        an email to <strong>LukeDEVS</strong>. Would you
                         like to continue?
                       </AlertDialogDescription>
                     </AlertDialogHeader>
@@ -139,12 +139,12 @@ const Header = () => {
           <AlertDialogContent className=" px-6 py-4  bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-5 border border-gray-100
 ">
             <AlertDialogHeader>
-              <AlertDialogTitle className="text-white">
+              <AlertDialogTitle className="text-white text-shadow">
                 Email Inquiry
               </AlertDialogTitle>
-              <AlertDialogDescription className="text-white font-bold">
+              <AlertDialogDescription className="text-white font-bold text-shadow">
                 Pressing "Email" will open your email client and start a business inquiry email
-                to <strong>{emailAddress}</strong> <br aria-label="line break"/> <br/> Would you like to continue? <br aria-label="line break"/> <br/>
+                to LukeDEVS <br aria-label="line break"/> <br/> Would you like to continue? <br aria-label="line break"/> <br/>
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter className="px-1 py-2 gap-2 pt-3">
