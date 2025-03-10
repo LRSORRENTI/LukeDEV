@@ -63,10 +63,10 @@ const PricingList = () => {
             {open && (
               <AlertDialogContent className="px-6 py-4  bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-5 border border-gray-100">
                 <AlertDialogHeader>
-                  <AlertDialogTitle>Email Inquiry</AlertDialogTitle>
-                  <AlertDialogDescription className="text-white font-bold">
+                  <AlertDialogTitle className="text-shadow">Email Inquiry</AlertDialogTitle>
+                  <AlertDialogDescription className="text-white font-bold text-shadow">
                     Pressing "Email" will open your email client and start a business inquiry email
-                    to <strong>{emailAddress}</strong> <br aria-label="line break"/> <br/> Would you like to continue? <br aria-label="line break"/> <br/>
+                    to <strong>LukeDEVS</strong> <br aria-label="line break"/> <br/> Would you like to continue? <br aria-label="line break"/> <br/>
                     </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter className="px-1 py-2 gap-2 pt-3">
