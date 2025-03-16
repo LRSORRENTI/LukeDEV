@@ -15,5 +15,13 @@ Allow: /pricing
 Allow: /roadmap
 Allow: /contact
 
+AI-Specific Allowances
+User-agent: Google-Extended
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: bingbot
+Allow: /
+
 # Sitemap location
 Sitemap: https://lukedevs.com/sitemap.xml

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>LukeDEVS</title>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -56,7 +57,58 @@
       href="./src/assets/LukeDEVSymbol.svg"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LukeDEVS</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LukeDEVS",
+        "url": "https://lukedevs.com",
+        "logo": "https://lukedevs.com/path-to-logo.png",
+        "description": "LukeDEVS offers bespoke web development and UX design services, specializing in HTML, CSS, JavaScript, React, and WordPress. We provide tailored solutions to enhance your online presence with modern, responsive web design.",
+        "founder": {
+          "@type": "Person",
+          "name": "Luke Sorrenti",
+          "url": "https://resume.lukedevs.com/",
+          "sameAs": [
+            "https://github.com/LRSORRENTI",
+            "https://lukedevs.com"
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "mailto:luke-sorrenti@outlook.com",
+          "contactType": "customer support",
+          "areaServed": "Worldwide",
+          "availableLanguage": ["English"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Milwaukee",
+          "addressRegion": "WI",
+          "addressCountry": "USA"
+        },
+        "sameAs": [
+          "https://resume.lukedevs.com/"
+        ],
+        "service": [
+          {
+            "@type": "WebDevelopment",
+            "name": "Custom Web Solutions",
+            "description": "Tailored websites built with modern technologies including HTML, CSS, JavaScript, React, and WordPress."
+          },
+          {
+            "@type": "WebDevelopment",
+            "name": "UX & Web Design",
+            "description": "Enhancing user experience through research-driven design, accessibility improvements, and performance optimizations."
+          }
+        ],
+        "potentialAction": {
+          "@type": "ContactAction",
+          "target": "mailto:luke-sorrenti@outlook.com",
+          "name": "Contact LukeDEVS"
+        }
+      }
+      </script> 
   </head>
   <body>
     <div id="root"></div>
