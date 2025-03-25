@@ -84,11 +84,17 @@ import badgerOil from './webpProjectImgs/badgeroil.webp'
 import brightAquarium from './webpProjectImgs/brightaquarium.webp'
 import nightPulse from './webpProjectImgs/nightpulse.webp'
 import tracyPsych from './webpProjectImgs/tracyjonespsych.webp'
+import eliteTech from './webpProjectImgs/elite-tech.webp'
+import steeleConstr from './webpProjectImgs/steeleConstr.webp'
+import portfolioTwo from './webpProjectImgs/portfolioTwo.webp'
 
 
 
 
 export {
+  eliteTech,
+  steeleConstr,
+  portfolioTwo,
   tracyPsych,
   nightPulse,
   brightAquarium,
