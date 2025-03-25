@@ -2,7 +2,7 @@ import React from 'react';
 import Section from "./Section";
 import Heading from "./Heading";
 
-import { brightAquarium, photographerImg, boltiImg, madisonImg, nexaBankImg, restaurantImg, airTourImg, futureWaveImg, creativeDesignImg, architectImg, hotelImg, jobSearchImg, pupPastries, rustlingOaks, seoWebsite, badgerOil, nightPulse, tracyPsych } from '../assets';
+import { brightAquarium, photographerImg, boltiImg, madisonImg, nexaBankImg, restaurantImg, airTourImg, futureWaveImg, creativeDesignImg, architectImg, hotelImg, jobSearchImg, pupPastries, rustlingOaks, seoWebsite, badgerOil, nightPulse, tracyPsych, eliteTech, steeleConstr, portfolioTwo } from '../assets';
 
 const ProjectCard = ({ image, title, description, link }) => (
   <a
@@ -28,8 +28,10 @@ const ProjectCard = ({ image, title, description, link }) => (
 
 const Services = () => {
   const projects = [
-    { image: rustlingOaks, title: "Rustling Oaks", description: "Modern and sleek Golf website with Next.js and Framer Motion", link: "https://rustling-oaks-golf-course.vercel.app/" },
     { image: brightAquarium, title: "Bright Aquarium", description: "Aquarium website built using Next.js and Framer Motion", link: "https://bright-aquarium.vercel.app/" },
+    { image: eliteTech, title: "Elite Technologies", description: "Vibrant and eye-catching website built with HTML, Tailwind CSS, and JavaScript", link: "https://elite-tech.luke-sorrenti.workers.dev/" },
+    { image: portfolioTwo, title: "Tech Portfolio", description: "Interactive and dynamic website built with Next.js", link: "https://modern-portfolio-rose.vercel.app/" },
+    { image: rustlingOaks, title: "Rustling Oaks", description: "Modern and sleek Golf website with Next.js and Framer Motion", link: "https://rustling-oaks-golf-course.vercel.app/" },
     { image: nightPulse, title: "Nightclub Website", description: "Eye-catching Night CLub and Bar website with Next.js and Framer Motion", link: "https://night-pulse.vercel.app/" },
     { image: seoWebsite, title: "SEO Website", description: "Eye-catching SEO website with Next.js and Framer Motion", link: "https://improve-seo-ai.vercel.app/" },
     { image: badgerOil, title: "Oil Equipment Website", description: "HTML, CSS, and JavaScript website built for an oil equipment  distribution and  repair company", link: "https://badger-oil.netlify.app/" },
@@ -42,6 +44,7 @@ const Services = () => {
     { image: architectImg, title: "Architect Showcase", description: "Elegant portfolio website for a renowned architecture firm", link: "https://luke-architect.netlify.app/" },
     { image: photographerImg, title: "Photographer Website", description: "Visually striking photographer portfolio website", link: "https://dante-photographer.netlify.app/" },
     { image: boltiImg, title: "E-Scooter Rental Website", description: "Vibrant and dynamic website advertising E-Scooters", link: "https://luke-bolti.netlify.app/" },
+    { image: steeleConstr, title: "Construction Website", description: "Sleek and dynamic website advertising a construction company", link: "https://steele-construction.netlify.app/" },    
     { image: madisonImg, title: "Public Library Website", description: "Aesthetically clean and simple website built for a public library", link: "https://madison-public-lbrary.netlify.app/" },
     { image: pupPastries, title: "Bakery Website", description: "Elegant and modern bakery website", link: "https://pup-pastries-future.netlify.app/"},
     { image: hotelImg, title: "Hotel Website", description: "Minimalist and modern hotel website", link: "https://hotel-manhattan.netlify.app/" },
