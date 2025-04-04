@@ -15,7 +15,7 @@ Allow: /pricing
 Allow: /roadmap
 Allow: /contact
 
-AI-Specific Allowances
+# AI-Specific Allowances
 User-agent: Google-Extended
 User-agent: ChatGPT-User
 User-agent: GPTBot
