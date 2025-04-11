@@ -10,11 +10,18 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 import FadeInSection from "./components/FadeInSection";
 
+import Down from './components/Down';
+
+// NOTE: remove the <Down/> component and uncomment the rest to restore the look of LukeDEVS.
+
 const App = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <Header />
+      <FadeInSection>
+        <Down/>
+      </FadeInSection>
+        {/* <Header />
         <FadeInSection>
           <Hero />
         </FadeInSection>
@@ -35,7 +42,7 @@ const App = () => {
         </FadeInSection>
         <FadeInSection>
           <Footer />
-        </FadeInSection>
+        </FadeInSection> */}
       </div>
       <ButtonGradient />
     </>
