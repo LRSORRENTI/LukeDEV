@@ -1,6 +1,6 @@
 # LukeDEVS
 
-# NOTE TO SELF: I'm taking LukeDEVS down, inside of App.jsx remove the <Down/> component, which is a modified version of the <Hero/> component, and uncomment the rest to view the full application:
+# NOTE TO SELF: I'm taking LukeDEVS down, inside of App.jsx remove the < Down/> component, which is a modified version of the < Hero/> component, and uncomment the rest to view the full application:
 
 ```
 const App = () => {
