@@ -18,10 +18,10 @@ const App = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-      <FadeInSection>
+      {/* <FadeInSection>
         <Down/>
-      </FadeInSection>
-        {/* <Header />
+      </FadeInSection> */}
+        <Header />
         <FadeInSection>
           <Hero />
         </FadeInSection>
@@ -42,7 +42,7 @@ const App = () => {
         </FadeInSection>
         <FadeInSection>
           <Footer />
-        </FadeInSection> */}
+        </FadeInSection>
       </div>
       <ButtonGradient />
     </>
