@@ -13,6 +13,23 @@
   color-scheme: dark;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+html.modal-open,
+body.modal-open {
+  padding-right: var(--scrollbar-compensation, 0px);
+}
+
+html.modal-open {
+  overflow-y: scroll;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -91,4 +108,23 @@
 
 .-rotate-360 {
   @apply rotate-[-360deg];
+}
+
+.js-hero-tilt {
+  transform-style: preserve-3d;
+}
+
+.service-sweep {
+  position: absolute;
+  inset: -20%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.18) 45%, rgba(120, 200, 255, 0.22) 50%, rgba(255, 255, 255, 0.18) 55%, transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-hero-tilt {
+    transform: none;
+  }
 }
