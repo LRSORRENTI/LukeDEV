@@ -7,26 +7,11 @@ import { navigation } from "../constants/index";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
-
-import {
-  AlertDialog,
-  AlertDialogTrigger,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogFooter,
-  AlertDialogTitle,
-  AlertDialogDescription,
-  AlertDialogAction,
-  AlertDialogCancel,
-} from "./alert-dialog";
-
-const emailAddress = "luke-sorrenti@outlook.com";
-const mailtoLink = `mailto:${emailAddress}?subject=Website%20Development%20Inquiry`;
+import ContactModal from "./ContactModal";
 
 const Header = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
-  const [openDialog, setOpenDialog] = useState(false);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -68,46 +53,14 @@ const Header = () => {
           <div className="relative z-2 flex flex-col items-center justify-start sm:justify-center mx-auto lg:mr-32 lg:flex-row">
             {navigation.map((item) =>
               item.onlyMobile ? (
-                <AlertDialog key={item.id} open={openDialog} onOpenChange={setOpenDialog}>
-                  <AlertDialogTrigger asChild>
-                    <button
-                      onClick={() => setOpenDialog(true)}
-                      className="block font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1  px-24 py-5 mb-2 md:mb-0 md:py-8 md:px-96 lg:hidden text-center"
-                    >
+                <ContactModal
+                  key={item.id}
+                  trigger={
+                    <button onClick={handleClick} className="block font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1  px-24 py-5 mb-2 md:mb-0 md:py-8 md:px-96 lg:hidden text-center">
                       {item.title}
                     </button>
-                  </AlertDialogTrigger>
-
-                  <AlertDialogContent className=" px-6 py-4 rounded-lg">
-                    <AlertDialogHeader>
-                      <AlertDialogTitle className="text-white">
-                        Email Inquiry
-                      </AlertDialogTitle>
-                      <AlertDialogDescription className="text-white">
-                        Clicking "Email" will open your email client and start
-                        an email to <strong>LukeDEVS</strong>. Would you
-                        like to continue?
-                      </AlertDialogDescription>
-                    </AlertDialogHeader>
-                    <AlertDialogFooter className="px-1 py-2 gap-2 pt-3">
-                      <AlertDialogCancel
-                        onClick={() => setOpenDialog(false)}
-                        className="bg-red-300 border-2 border-transparent hover:border-red-300 hover:text-black/80 px-4 py-2 rounded-md transition-all duration-200"
-                      >
-                        Cancel
-                      </AlertDialogCancel>
-                      <AlertDialogAction
-                        onClick={() => {
-                          window.location.href = mailtoLink;
-                          setOpenDialog(false);
-                        }}
-                        className="border-2 border-green-400 bg-white px-6 py-2 rounded-md text-black/90 hover:text-white hover:bg-green-400 transition-all duration-200"
-                      >
-                        Email
-                      </AlertDialogAction>
-                    </AlertDialogFooter>
-                  </AlertDialogContent>
-                </AlertDialog>
+                  }
+                />
               ) : (
                 <a
                   key={item.id}
@@ -125,7 +78,9 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        {/* Contact Button with Alert Dialog (Desktop) */}
+        <ContactModal trigger={<Button className="hidden lg:flex">Contact</Button>} />
+
+        {/* Legacy contact modal (kept for reference)
         <AlertDialog open={openDialog} onOpenChange={setOpenDialog}>
           <AlertDialogTrigger asChild>
             <Button
@@ -166,6 +121,7 @@ const Header = () => {
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>
+        */}
 
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
           <MenuSvg openNavigation={openNavigation} />
@@ -176,3 +132,4 @@ const Header = () => {
 };
 
 export default Header;
+

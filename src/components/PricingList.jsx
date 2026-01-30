@@ -1,66 +1,17 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ContactModal from "./ContactModal";
 
 gsap.registerPlugin(ScrollTrigger);
-import {
-  AlertDialog,
-  AlertDialogTrigger,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogFooter,
-  AlertDialogTitle,
-  AlertDialogDescription,
-  AlertDialogAction,
-  AlertDialogCancel,
-} from "./alert-dialog";
-
-const emailAddress = "luke-sorrenti@outlook.com";
-const subject = "Website Development Inquiry";
-const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
 
 const PricingList = () => {
-  const [open, setOpen] = useState(false);
   const listRef = useRef(null);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    const body = document.body;
-    if (!root || !body) return;
-
-    if (open) {
-      const scrollY = window.scrollY || 0;
-      const scrollbarWidth = window.innerWidth - root.clientWidth;
-      body.dataset.scrollY = String(scrollY);
-      root.style.setProperty("--scrollbar-compensation", `${scrollbarWidth}px`);
-      root.classList.add("modal-open");
-      body.classList.add("modal-open");
-      body.style.position = "fixed";
-      body.style.top = `-${scrollY}px`;
-      body.style.left = "0";
-      body.style.right = "0";
-      body.style.width = "100%";
-      body.style.paddingRight = `${scrollbarWidth}px`;
-    } else {
-      root.classList.remove("modal-open");
-      body.classList.remove("modal-open");
-      root.style.removeProperty("--scrollbar-compensation");
-      body.style.position = "";
-      body.style.top = "";
-      body.style.left = "";
-      body.style.right = "";
-      body.style.width = "";
-      body.style.paddingRight = "";
-      const restoreY = parseInt(body.dataset.scrollY || "0", 10);
-      delete body.dataset.scrollY;
-      if (restoreY) window.scrollTo(0, restoreY);
-    }
-  }, [open]);
 
   useLayoutEffect(() => {
     if (!listRef.current) return;
@@ -189,6 +140,15 @@ const PricingList = () => {
             )}
           </div>
 
+          <ContactModal
+            trigger={
+              <Button className="w-full mb-6" white={!!item.price}>
+                {item.price ? "Get started" : "Contact for pricing"}
+              </Button>
+            }
+          />
+
+          {/* Legacy contact modal (kept for reference)
           <AlertDialog open={open} onOpenChange={setOpen}>
             <AlertDialogTrigger asChild>
               <Button
@@ -226,6 +186,7 @@ const PricingList = () => {
               </AlertDialogContent>
             )}
           </AlertDialog>
+          */}
 
           <ul>
             {item.features.map((feature, index) => (
