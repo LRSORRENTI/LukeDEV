@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { LukeDEVSymbol } from "../assets";
@@ -11,6 +11,7 @@ import ContactModal from "./ContactModal";
 
 const Header = () => {
   const pathname = useLocation();
+  const navigate = useNavigate();
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
@@ -27,6 +28,14 @@ const Header = () => {
     if (!openNavigation) return;
     enablePageScroll();
     setOpenNavigation(false);
+  };
+
+  const handleNavLinkClick = (event, url) => {
+    if (url.startsWith("#") && pathname.pathname !== "/") {
+      event.preventDefault();
+      navigate(`/${url}`);
+    }
+    handleClick();
   };
 
   return (
@@ -65,7 +74,7 @@ const Header = () => {
                 <a
                   key={item.id}
                   href={item.url}
-                  onClick={handleClick}
+                  onClick={(event) => handleNavLinkClick(event, item.url)}
                   className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-5 mb-2 md:mb-0 md:py-8 md:px-8 lg:-mr-2.5 lg:text-sm lg:font-semibold text-center  ${
                     item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50"
                   } lg:leading-5 lg:hover:text-white xl:px-12`}
