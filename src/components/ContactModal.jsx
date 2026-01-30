@@ -19,6 +19,21 @@ const ContactModal = ({ trigger }) => {
     const body = document.body;
     if (!root || !body) return;
 
+    const releaseScrollLock = () => {
+      root.classList.remove("modal-open");
+      body.classList.remove("modal-open");
+      root.style.removeProperty("--scrollbar-compensation");
+      body.style.position = "";
+      body.style.top = "";
+      body.style.left = "";
+      body.style.right = "";
+      body.style.width = "";
+      body.style.paddingRight = "";
+      const restoreY = parseInt(body.dataset.scrollY || "0", 10);
+      delete body.dataset.scrollY;
+      if (restoreY) window.scrollTo(0, restoreY);
+    };
+
     if (open) {
       const scrollY = window.scrollY || 0;
       const scrollbarWidth = window.innerWidth - root.clientWidth;
@@ -33,19 +48,10 @@ const ContactModal = ({ trigger }) => {
       body.style.width = "100%";
       body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
-      root.classList.remove("modal-open");
-      body.classList.remove("modal-open");
-      root.style.removeProperty("--scrollbar-compensation");
-      body.style.position = "";
-      body.style.top = "";
-      body.style.left = "";
-      body.style.right = "";
-      body.style.width = "";
-      body.style.paddingRight = "";
-      const restoreY = parseInt(body.dataset.scrollY || "0", 10);
-      delete body.dataset.scrollY;
-      if (restoreY) window.scrollTo(0, restoreY);
+      releaseScrollLock();
     }
+
+    return () => releaseScrollLock();
   }, [open]);
 
   return (
