@@ -97,6 +97,10 @@ To preview the production build locally, run:
 npm run preview
 ```
 
+### Netlify Forms notifications
+
+Configure email notifications in the Netlify dashboard under Site settings -> Forms -> Form notifications.
+
 ### Contributing
 
 Contributions are welcome.

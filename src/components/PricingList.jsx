@@ -1,36 +1,125 @@
 "use client";
 
-import { useState } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
-import {
-  AlertDialog,
-  AlertDialogTrigger,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogFooter,
-  AlertDialogTitle,
-  AlertDialogDescription,
-  AlertDialogAction,
-  AlertDialogCancel,
-} from "./alert-dialog";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ContactModal from "./ContactModal";
 
-const emailAddress = "luke-sorrenti@outlook.com";
-const subject = "Website Development Inquiry";
-const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
+gsap.registerPlugin(ScrollTrigger);
 
 const PricingList = () => {
-  const [open, setOpen] = useState(false);
+  const listRef = useRef(null);
+
+  useLayoutEffect(() => {
+    if (!listRef.current) return;
+
+    const ctx = gsap.context((self) => {
+      const q = self.selector;
+      const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (prefersReduced) return;
+
+      gsap.from(q(".js-pricing-card"), {
+        opacity: 0,
+        y: 50,
+        scale: 0.96,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.12,
+        scrollTrigger: {
+          trigger: listRef.current,
+          start: "top 75%",
+        },
+      });
+
+      gsap.utils.toArray(q(".js-price-value")).forEach((el) => {
+        const value = parseInt(el.dataset.price || "0", 10);
+        if (!value) return;
+        gsap.fromTo(
+          el,
+          { innerText: 0 },
+          {
+            innerText: value,
+            duration: 1.2,
+            ease: "power2.out",
+            snap: { innerText: 1 },
+            scrollTrigger: {
+              trigger: el,
+              start: "top 85%",
+            },
+          }
+        );
+      });
+
+      const hoverCleanups = [];
+
+      gsap.utils.toArray(q(".js-pricing-card")).forEach((card) => {
+        gsap.from(card.querySelectorAll(".js-pricing-feature"), {
+          opacity: 0,
+          x: -16,
+          duration: 0.6,
+          ease: "power2.out",
+          stagger: 0.06,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+          },
+        });
+
+        gsap.from(card.querySelectorAll(".js-pricing-check"), {
+          scale: 0.2,
+          opacity: 0,
+          duration: 0.5,
+          ease: "back.out(1.7)",
+          stagger: 0.06,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+          },
+        });
+
+        const hoverTl = gsap.timeline({ paused: true });
+        hoverTl.to(
+          card,
+          {
+            scale: 1.02,
+            boxShadow: "0 25px 80px rgba(120, 200, 255, 0.22)",
+            duration: 0.35,
+            ease: "power2.out",
+          },
+          0
+        );
+
+        const onEnter = () => hoverTl.play();
+        const onLeave = () => hoverTl.reverse();
+        card.addEventListener("mouseenter", onEnter);
+        card.addEventListener("mouseleave", onLeave);
+        hoverCleanups.push(() => {
+          card.removeEventListener("mouseenter", onEnter);
+          card.removeEventListener("mouseleave", onLeave);
+        });
+      });
+
+      return () => hoverCleanups.forEach((fn) => fn());
+    }, listRef);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <div className="flex gap-[1rem] max-lg:flex-wrap"
-    aria-description="Actual pricing cards showing the price of each option, standard price, premium, and enterprise respectively.">
+    <div
+      className="flex gap-[1rem] max-lg:flex-wrap"
+      ref={listRef}
+      aria-description="Actual pricing cards showing the price of each option, standard price, premium, and enterprise respectively."
+    >
       {pricing.map((item) => (
         <div
           key={item.id}
-          className="w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8 odd:my-4 
-          [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3"
+          className={`w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8 odd:my-4 js-pricing-card ${
+            item.id === "1" ? "js-pricing-highlight" : ""
+          } [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3`}
         >
           <h4 className="h4 mb-4">{item.title}</h4>
 
@@ -43,13 +132,24 @@ const PricingList = () => {
               <>
                 <div className="h3">$</div>
                 <div className="text-[5.5rem] leading-none font-bold">
-                  {item.price}
+                  <span className="js-price-value" data-price={item.price}>
+                    {item.price}
+                  </span>
                 </div>
               </>
             )}
           </div>
 
-          <AlertDialog>
+          <ContactModal
+            trigger={
+              <Button className="w-full mb-6" white={!!item.price}>
+                {item.price ? "Get started" : "Contact for pricing"}
+              </Button>
+            }
+          />
+
+          {/* Legacy contact modal (kept for reference)
+          <AlertDialog open={open} onOpenChange={setOpen}>
             <AlertDialogTrigger asChild>
               <Button
                 className="w-full mb-6"
@@ -86,14 +186,22 @@ const PricingList = () => {
               </AlertDialogContent>
             )}
           </AlertDialog>
+          */}
 
           <ul>
             {item.features.map((feature, index) => (
               <li
                 key={index}
-                className="flex items-start py-5 border-t border-n-6"
+                className="flex items-start py-5 border-t border-n-6 js-pricing-feature"
               >
-                <img src={check} width={24} height={24} alt="Check" loading="lazy"/>
+                <img
+                  src={check}
+                  width={24}
+                  height={24}
+                  alt="Check"
+                  loading="lazy"
+                  className="js-pricing-check"
+                />
                 <p className="body-2 ml-4">{feature}</p>
               </li>
             ))}
