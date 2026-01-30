@@ -9,9 +9,17 @@ const FadeInSection = ({ children }) => {
             entries.forEach(entry => setVisible(entry.isIntersecting));
         });
 
-        observer.observe(domRef.current);
+        const target = domRef.current;
+        if (target instanceof Element) {
+            observer.observe(target);
+        }
 
-        return () => observer.unobserve(domRef.current);
+        return () => {
+            if (target instanceof Element) {
+                observer.unobserve(target);
+            }
+            observer.disconnect();
+        };
     }, []);
 
     return (
