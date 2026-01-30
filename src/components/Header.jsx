@@ -38,6 +38,13 @@ const Header = () => {
     handleClick();
   };
 
+  const handleLogoClick = (event) => {
+    if (pathname.pathname !== "/") {
+      event.preventDefault();
+      navigate("/#hero");
+    }
+  };
+
   return (
     <div
       aria-description="Navigation menu displaying five links"
@@ -50,6 +57,7 @@ const Header = () => {
         <a
           className="block w-[12rem] xl:mr-8 text-2xl font-extrabold ml-2"
           href="#hero"
+          onClick={handleLogoClick}
         >
           &nbsp;LukeDEVS
         </a>
