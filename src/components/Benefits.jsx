@@ -74,12 +74,12 @@ const Benefits = () => {
         card.addEventListener("mouseenter", onEnter);
         card.addEventListener("mouseleave", onLeave);
 
-        ScrollTrigger.create({
-          trigger: card,
-          start: "top 85%",
-          onEnter: () => gsap.to(card, { boxShadow: "0 30px 80px rgba(120, 180, 255, 0.18)", duration: 0.6 }),
-          onLeaveBack: () => gsap.to(card, { boxShadow: "none", duration: 0.4 }),
-        });
+        // ScrollTrigger.create({
+        //   trigger: card,
+        //   start: "top 85%",
+        //   onEnter: () => gsap.to(card, { boxShadow: "0 30px 80px rgba(120, 180, 255, 0.18)", duration: 0.6 }),
+        //   onLeaveBack: () => gsap.to(card, { boxShadow: "none", duration: 0.4 }),
+        // });
 
         return () => {
           card.removeEventListener("mouseenter", onEnter);
