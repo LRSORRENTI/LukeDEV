@@ -36,12 +36,12 @@ const ContactModal = ({ trigger }) => {
 
     if (open) {
       const scrollY = window.scrollY || 0;
-      const scrollbarWidth = window.innerWidth - root.clientWidth;
+      const scrollbarWidth = "0";
       body.dataset.scrollY = String(scrollY);
       root.style.setProperty("--scrollbar-compensation", `${scrollbarWidth}px`);
       root.classList.add("modal-open");
       body.classList.add("modal-open");
-      body.style.position = "fixed";
+      body.style.position = "default";
       body.style.top = `-${scrollY}px`;
       body.style.left = "0";
       body.style.right = "0";
