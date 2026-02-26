@@ -72,6 +72,7 @@ const Header = () => {
               item.onlyMobile ? (
                 <ContactModal
                   key={item.id}
+                  source="nav"
                   trigger={
                     <button onClick={handleClick} className="block font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1  px-24 py-5 mb-2 md:mb-0 md:py-8 md:px-96 lg:hidden text-center">
                       {item.title}
@@ -95,7 +96,7 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <ContactModal trigger={<Button className="hidden lg:flex">Contact</Button>} />
+        <ContactModal source="nav" trigger={<Button className="hidden lg:flex">Contact</Button>} />
 
         {/* Legacy contact modal (kept for reference)
         <AlertDialog open={openDialog} onOpenChange={setOpenDialog}>
