@@ -1,49 +1,5 @@
 # LukeDEVS
 
-# NOTE TO SELF: I'm taking LukeDEVS down, inside of App.jsx remove the < Down/> component, which is a modified version of the < Hero/> component, and uncomment the rest to view the full application:
-
-```
-// src/App.jsx file:
-
-const App = () => {
-  return (
-    <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-      // REMOVE BELOW
-      <FadeInSection>
-        <Down/>
-      </FadeInSection>
-      // REMOVE ABOVE AND UNCOMMENT BELOW
-        {/* <Header />
-        <FadeInSection>
-          <Hero />
-        </FadeInSection>
-        <FadeInSection>
-          <Benefits />
-        </FadeInSection>
-        <FadeInSection>
-          <Collaboration />
-        </FadeInSection>
-        <FadeInSection>
-          <Services />
-        </FadeInSection>
-        <FadeInSection>
-          <Pricing />
-        </FadeInSection>
-        <FadeInSection>
-          <Roadmap />
-        </FadeInSection>
-        <FadeInSection>
-          <Footer />
-        </FadeInSection> */}
-      </div>
-      <ButtonGradient />
-    </>
-  );
-};
-
-```
-
 **Welcome to LukeDEVS, a dynamic web development services platform designed to showcase and sell top-tier web development services. This project is built using React and leverages Vite for efficient bundling and development workflows. Our site features a modern, responsive design implemented with TailwindCSS and enhanced interactive elements provided by react-just-parallax.**
 
 ## Features
