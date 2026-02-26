@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { trackContactModalOpen } from "../utils/gtm";
 
 import ContactForm from "./ContactForm";
 import {
@@ -11,8 +12,15 @@ import {
   AlertDialogCancel,
 } from "./alert-dialog";
 
-const ContactModal = ({ trigger }) => {
+const ContactModal = ({ trigger, source }) => {
   const [open, setOpen] = useState(false);
+
+  const handleOpenChange = (nextOpen) => {
+    if (nextOpen && source) {
+      trackContactModalOpen(source);
+    }
+    setOpen(nextOpen);
+  };
 
   useEffect(() => {
     const root = document.documentElement;
@@ -55,7 +63,7 @@ const ContactModal = ({ trigger }) => {
   }, [open]);
 
   return (
-    <AlertDialog open={open} onOpenChange={setOpen}>
+    <AlertDialog open={open} onOpenChange={handleOpenChange}>
       <AlertDialogTrigger asChild>{trigger}</AlertDialogTrigger>
       <AlertDialogContent className="w-[92vw] max-w-xl rounded-xl border border-gray-100 bg-gray-200 bg-clip-padding bg-opacity-5 px-6 py-5 backdrop-blur-2xl shadow-[0_20px_70px_rgba(0,0,0,0.45)]">
         <div className="space-y-6">

@@ -13,6 +13,14 @@ gsap.registerPlugin(ScrollTrigger);
 const PricingList = () => {
   const listRef = useRef(null);
 
+  const getPricingSource = (title) => {
+    const normalizedTitle = String(title || "").trim().toLowerCase();
+    if (normalizedTitle === "standard") return "standard";
+    if (normalizedTitle === "premium") return "premium";
+    if (normalizedTitle === "enterprise") return "enterprise";
+    return "unknown";
+  };
+
   useLayoutEffect(() => {
     if (!listRef.current) return;
 
@@ -141,6 +149,7 @@ const PricingList = () => {
           </div>
 
           <ContactModal
+            source={getPricingSource(item.title)}
             trigger={
               <Button className="w-full mb-6" white={!!item.price}>
                 {item.price ? "Get started" : "Contact for pricing"}
