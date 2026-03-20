@@ -96,7 +96,7 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "Empower your projects with our seamless integration and robust security—work smarter and safer";
+  "Empower your projects with our seamless integration and robust security, work smarter and safer";
 
 export const collabContent = [
   {
