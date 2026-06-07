@@ -5,11 +5,17 @@ const INITIAL_STATE = {
   name: "",
   email: "",
   message: "",
+  "bot-field": "",
 };
 
 const encode = (data) => new URLSearchParams(data).toString();
 
-const ContactForm = ({ onSuccess, submitLabel = "Send message", cancelSlot, className }) => {
+const ContactForm = ({
+  onSuccess,
+  submitLabel = "Send message",
+  cancelSlot,
+  className,
+}) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState(INITIAL_STATE);
   const [status, setStatus] = useState({ type: "idle", message: "" });
@@ -18,7 +24,9 @@ const ContactForm = ({ onSuccess, submitLabel = "Send message", cancelSlot, clas
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+
     setFormData((prev) => ({ ...prev, [name]: value }));
+
     if (status.type === "error") {
       setStatus({ type: "idle", message: "" });
     }
@@ -43,6 +51,7 @@ const ContactForm = ({ onSuccess, submitLabel = "Send message", cancelSlot, clas
 
     const payload = {
       "form-name": "contact",
+      "bot-field": formData["bot-field"],
       ...trimmed,
     };
 
@@ -67,6 +76,7 @@ const ContactForm = ({ onSuccess, submitLabel = "Send message", cancelSlot, clas
         onSuccess();
       }
 
+      setFormData(INITIAL_STATE);
       navigate("/thanks");
     } catch (error) {
       setStatus({
@@ -82,10 +92,24 @@ const ContactForm = ({ onSuccess, submitLabel = "Send message", cancelSlot, clas
       method="POST"
       action="/thanks"
       data-netlify="true"
+      netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className={`space-y-4 ${className || ""}`}
     >
       <input type="hidden" name="form-name" value="contact" />
+
+      <p className="hidden">
+        <label>
+          Don&apos;t fill this out:
+          <input
+            name="bot-field"
+            value={formData["bot-field"]}
+            onChange={handleChange}
+            tabIndex="-1"
+            autoComplete="off"
+          />
+        </label>
+      </p>
 
       <label className="block text-sm font-semibold text-white/80">
         Name
@@ -136,6 +160,7 @@ const ContactForm = ({ onSuccess, submitLabel = "Send message", cancelSlot, clas
 
       <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-end">
         {cancelSlot}
+
         <button
           type="submit"
           disabled={isSubmitting}
