@@ -72,7 +72,7 @@ const ContactModal = ({ trigger, source }) => {
               Start a project
             </AlertDialogTitle>
             <AlertDialogDescription className="text-white/75">
-              Share a few details and I will reply within 1-2 business days.
+              Share a few details and I'll reply within 1-2 business days.
             </AlertDialogDescription>
           </AlertDialogHeader>
 
